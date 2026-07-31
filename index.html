@@ -1,1 +1,85 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <!-- ============================================================
+       NOVA-AI-V2.0 — Application Shell
+       Production-ready HTML entry point. No business logic, no
+       framework wiring, and no UI implementation is embedded here —
+       this is the static shell the future frontend build will mount
+       into and progressively enhance.
+  ============================================================= -->
 
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+
+  <!-- Primary Meta Tags -->
+  <title>NOVA AI</title>
+  <meta name="title" content="NOVA AI" />
+  <meta name="description" content="NOVA AI — an intelligent assistant platform." />
+  <meta name="application-name" content="NOVA AI" />
+  <meta name="author" content="NOVA AI" />
+
+  <!-- Security -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self'; connect-src 'self'; font-src 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+
+  <!-- Open Graph / Social Preview -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="NOVA AI" />
+  <meta property="og:description" content="NOVA AI — an intelligent assistant platform." />
+  <meta property="og:site_name" content="NOVA AI" />
+  <meta property="og:image" content="/assets/images/og-cover.png" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="NOVA AI" />
+  <meta name="twitter:description" content="NOVA AI — an intelligent assistant platform." />
+  <meta name="twitter:image" content="/assets/images/og-cover.png" />
+
+  <!-- Theming -->
+  <meta name="theme-color" content="#0B0F19" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#FFFFFF" media="(prefers-color-scheme: light)" />
+  <meta name="color-scheme" content="dark light" />
+
+  <!-- Icons -->
+  <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicon-16x16.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/apple-touch-icon.png" />
+  <link rel="manifest" href="/manifest.webmanifest" />
+
+  <!-- Fonts (preconnect only — no external font actually loaded yet) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Stylesheet (forward reference — file to be implemented) -->
+  <link rel="stylesheet" href="/src/styles/main.css" />
+
+  <!-- Preload the SPA entry module -->
+  <link rel="modulepreload" href="/src/main.js" />
+</head>
+<body>
+  <!-- Skip link for keyboard/screen-reader accessibility -->
+  <a class="skip-link" href="#root">Skip to main content</a>
+
+  <!-- Root mount point for the future application shell -->
+  <div id="root" role="application" aria-label="NOVA AI"></div>
+
+  <!-- Minimal boot-time loading indicator, removed once the app mounts -->
+  <div id="app-loading" aria-hidden="true">
+    <div class="app-loading__spinner"></div>
+    <p class="app-loading__text">Loading NOVA AI…</p>
+  </div>
+
+  <!-- Fallback for environments without JavaScript enabled -->
+  <noscript>
+    <div class="noscript-warning">
+      NOVA AI requires JavaScript to be enabled in your browser to run.
+    </div>
+  </noscript>
+
+  <!-- Application entry point (forward reference — not implemented yet) -->
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
