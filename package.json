@@ -1,0 +1,35 @@
+{
+  "name": "nova-ai-v2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "NOVA AI V2.0 — Node.js/Express backend with Google Generative AI integration.",
+  "main": "server.js",
+  "type": "commonjs",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "keywords": [
+    "nova-ai",
+    "express",
+    "gemini",
+    "generative-ai",
+    "voice-assistant"
+  ],
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "@google/generative-ai": "^0.21.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.1",
+    "express-rate-limit": "^7.4.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
+}
